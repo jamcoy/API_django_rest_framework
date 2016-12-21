@@ -8,7 +8,7 @@ from rest_framework.permissions import AllowAny
 
 class RegistrationView(APIView):
     serializer_class = RegistrationSerializer
-    permission_classes = (AllowAny,)
+    permission_classes = (AllowAny,)  # A new user can't be authenticated
 
     def post(self, request):
         serializer = RegistrationSerializer(data=request.data)
