@@ -3,7 +3,7 @@ API using Django's Rest Framework (DRF).  Uses JSON Web Tokens for user authenti
 
 ####Create user:
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"username": "USERNAME", "password": "USERNAME"}' http://127.0.0.1:8000/accounts/register/
+curl -X POST -H "Content-Type: application/json" -d '{"username": "USERNAME", "password": "PASSWORD"}' http://127.0.0.1:8000/accounts/register/
 ```
 
 ####Retrieve JWT (JSON web token):
