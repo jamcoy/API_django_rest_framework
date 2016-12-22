@@ -12,8 +12,9 @@ curl -X POST -H "Content-Type: application/json" -d '{"username": "USERNAME", "p
 ```
 
 ####Place JWT in header for further API calls:
+Replace TOKEN with the token retrieved above.
 ```bash
-curl -H "Authorization: JWT *TOKEN*" http://127.0.0.1:8000/todo/1/?username=USERNAME
+curl -H "Authorization: JWT TOKEN" http://127.0.0.1:8000/todo/1/?username=USERNAME
 ```
 
 ####Auto-generated DRF docs
